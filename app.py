@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, request
+from flask import Flask, render_template, request
 
 # App config.
 app = Flask(__name__)
