@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, socket
 
 # App config.
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/test")
 def index():
     nb = 1
-    return render_template('index.html', number=nb)
+    return render_template('index.html', number=nb, vhost=socket.gethostname())
 
 
 if __name__ == "__main__":
