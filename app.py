@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, socket
+from flask import Flask, render_template, request
+import socket
 
 # App config.
 app = Flask(__name__)
