@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, socket
+from flask import Flask, render_template, request
+import socket
 
 # App config.
 app = Flask(__name__)
@@ -14,6 +15,7 @@ def index():
 @app.route("/add")
 def index():
     return render_template('add.html')
+
 
 
 if __name__ == "__main__":
